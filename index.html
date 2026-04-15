@@ -75,6 +75,26 @@
         transform: translateZ(0);
       }
 
+      @media (max-width: 430px) {
+        body {
+          padding: 0;
+          align-items: stretch;
+          min-height: 100dvh;
+        }
+        .device {
+          width: 100%;
+          height: 100dvh;
+          border-radius: 0;
+          box-shadow: none;
+        }
+        .slide {
+          height: 100dvh;
+        }
+        .slide-cover {
+          max-height: 100dvh;
+        }
+      }
+
       /* NAV */
       .nav {
         position: absolute;
@@ -255,7 +275,6 @@
         font-size: 22px;
         color: #7ba7d4;
         margin-top: 6px;
-        margin-bottom: 0;
         text-align: center;
       }
 
@@ -267,7 +286,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        margin: -48px 0 16px;
+        margin: 16px 0;
       }
 
       .cover-photo-placeholder {
